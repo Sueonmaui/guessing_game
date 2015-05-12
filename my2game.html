@@ -1,16 +1,25 @@
 
-
 <script type="text/javascript">
-    var guess, answer, message;
-    guess = prompt("Do you like cats? Yes or No?");
-    answer = "yes"
-    if (guess.toLowerCase() == answer ) {
-      message = "Great me too!";
+  var guess, message;
+  // guess = prompt("Do you like cats? Yes or No?");
+  guess = prompt("How do you feel about cats? Do you love them, neutral, or dislike them?");
+
+//  var answer = "yes"
+//    if (guess.toLowerCase() == answer ) {
+//    message = "Great me too!";
+//    } else {
+//      message = "So sorry for you.";
+//    }
+
+    if (guess.toLowerCase() == "love them") {
+        message = "Great me too!";
+    } else if (guess.toLowerCase() == "neutral") {
+        message = "You could like them more!";
+    } else if (guess.toLowerCase() == "dislike") {
+        message = "You should like them, they're soft and cuddly!";
     } else {
-      message = "So sorry for you.";
+        message = "So sorry for you!";
     }
-    alert(message);
 
-
-  </script>
-
+alert(message);
+</script>
