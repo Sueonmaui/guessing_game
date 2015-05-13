@@ -1,25 +1,35 @@
 
 <script type="text/javascript">
-  var guess, message;
-  // guess = prompt("Do you like cats? Yes or No?");
-  guess = prompt("How do you feel about cats? Do you love them, neutral, or dislike them?");
+  function Game() {
 
-//  var answer = "yes"
-//    if (guess.toLowerCase() == answer ) {
-//    message = "Great me too!";
-//    } else {
-//      message = "So sorry for you.";
-//    }
+    this.answer = prompt("How do you feel about cats? Do you love them, neutral, or dislike them?");
+    this.message = "";
 
-    if (guess.toLowerCase() == "love them") {
-        message = "Great me too!";
-    } else if (guess.toLowerCase() == "neutral") {
-        message = "You could like them more!";
-    } else if (guess.toLowerCase() == "dislike") {
-        message = "You should like them, they're soft and cuddly!";
-    } else {
-        message = "So sorry for you!";
-    }
+    this.retrieveMessage = function() {
+      if (this.answer.toLowerCase().substring(0,1) == "l") {
+            this.message = "Great me too!";
+      } else if (this.answer.toLowerCase().substring(0,1) == "n") {
+            this.message = "You could like them more!";
+      } else if (this.answer.toLowerCase().substring(0,1) == "d") {
+            this.message = "You should like them, they're soft and cuddly!";
+      } else {
+            this.message = "So sorry for you!";
+      }
+      alert(this.message);
+    };
+  }
 
-alert(message);
+  var runCatRun = new Game();
+
+  runCatRun.retrieveMessage();
+
+
+
+/*function Cat(name, color, superpower) {
+  this.name = name;
+  this.color = color;
+  this.superpower = superpower;
+}*/
+
+
 </script>
