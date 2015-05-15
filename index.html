@@ -11,18 +11,30 @@
     <body>
       <h1>Cat Scat!</h1>
       <h2>Demonstrate your love or dislike of cats</h2>
-      <h3>How to play: Answer the questions and click the ok button.</h3>
+      <h3>How to play: Answer the question and see your results.</h3>
       <p>No really. It's that simple.</p>
       <figure>
         <img src="Images/cat_statue.jpg" alt="Cat statue"/>
         <br />
       <figcaption>The Egyptian cat statue is named <em>Bast</em>.</figcaption>
       </figure>
+      <form>
+        <p>"How do you feel about cats?</p>
+        <select name="devices" id="list">
+          <option value="opt0">Please select from the drop down list</option>
+          <option value="opt1">Love them!</option>
+          <option value="opt2">Yeah, well so-so</option>
+          <option value="opt3">Can't stand them</option>
+          <option value="opt4">I like dogs more!</option>
+        </select>
+      </form>
+      <p id="result"></p>
       <p>For more information on cats check out these links</p>
         <ul>
             <li><a href="https://en.wikipedia.org/wiki/Ailurophobia" target="_blank">Fear of Cats <em>Ailurophobia</em></a></li>
             <li><a href="https://en.wikipedia.org/wiki/Popular_cat_names" target="_blank">Popular Cat Names</a></li>
             <li><a href="http://www.allthetests.com/quiz07/dasquiztd.php3?testid=1076808106" target="_blank">A Test About Cat Obsession</a></li>
         </ul>
+        <script src="my2game.js"></script>
     </body>
 </html>
